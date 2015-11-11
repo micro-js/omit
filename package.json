@@ -6,7 +6,6 @@
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
-    "as-array": "github:micro-js/as-array",
     "foreach": "github:micro-js/foreach"
   },
   "devDependencies": {

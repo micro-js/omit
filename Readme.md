@@ -12,7 +12,8 @@ Simple, tiny object omit utility
 `omit(obj, keys)`
 
   * `obj` - An object from which you'd like to omit some keys
-  * `keys` - A single key or array of keys to omit
+  * `keys` - A single key, array of keys, or truth-test function for keys to omit
+  * `ctx` - An optional context upon which to invoke `keys` if it is a function (this argument does nothing otherwise)
 
 Returns a new object with `keys` omitted from it.
 
