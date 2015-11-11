@@ -1,0 +1,15 @@
+{
+  "name": "omit",
+  "description": "Simple, tiny object omit utility",
+  "repository": "git://github.com/micro-js/omit.git",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {
+    "as-array": "github:micro-js/as-array",
+    "foreach": "github:micro-js/foreach"
+  },
+  "devDependencies": {
+    "mocha": "2.x"
+  }
+}
