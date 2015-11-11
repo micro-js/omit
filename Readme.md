@@ -5,7 +5,16 @@ Simple, tiny object omit utility
 
 ## Installation
 
-    $ npm install omit
+    $ npm install micro-js/omit
+
+## Usage
+
+`omit(obj, keys)`
+
+  * `obj` - An object from which you'd like to omit some keys
+  * `keys` - A single key or array of keys to omit
+
+Returns a new object with `keys` omitted from it.
 
 ## License
 
