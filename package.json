@@ -5,10 +5,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
   "dependencies": {
-    "foreach": "github:micro-js/foreach"
+    "@micro-js/foreach": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "2.x"
+    "tape": "^4.2.2"
   }
 }
