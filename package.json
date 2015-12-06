@@ -2,7 +2,7 @@
   "name": "@micro-js/omit",
   "description": "Simple, tiny object omit utility",
   "repository": "git://github.com/micro-js/omit.git",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
