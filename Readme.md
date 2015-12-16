@@ -5,7 +5,7 @@ Simple, tiny object omit utility
 
 ## Installation
 
-    $ npm install @micro-js/omit
+    $ npm install @f/omit
 
 ## Usage
 
