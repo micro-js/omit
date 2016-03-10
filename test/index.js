@@ -10,11 +10,9 @@ var test = require('tape')
  */
 
 test('should work', function (t) {
-  var obj = {a: 1}
-  var newObj = omit('a', obj)
+  var obj = {a: 1, b: 2}
 
-  t.equal(newObj.a, undefined)
-  t.equal(Object.keys(newObj).length, 0)
+  t.deepEqual(omit('a', obj), {b: 2})
 
   t.end()
 })
@@ -22,11 +20,19 @@ test('should work', function (t) {
 test('should curry', function (t) {
   var obj = {a: 1, b: 2}
   var omitA = omit(['a', 'b'])
-  var newObj = omitA(obj)
 
-  t.equal(newObj.a, undefined)
-  t.equal(newObj.b, undefined)
-  t.equal(Object.keys(newObj).length, 0)
+  t.deepEqual(omitA(obj), {})
 
+  var omitB = omit(['b'])
+  t.deepEqual(omitB(obj), {a: 1})
   t.end()
+})
+
+test('should take predicates', function (t) {
+  var obj = {a: 1, b: 2}
+
+  t.deepEqual(omit(predicate, obj), {b: 2})
+  t.end()
+
+  function predicate (key) { return key === 'a' }
 })
