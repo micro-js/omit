@@ -10,9 +10,10 @@ var test = require('tape')
  */
 
 test('should work', function (t) {
-  var obj = {a: 1, b: 2}
+  var obj = {a: 1, b: 2, c: 3}
 
-  t.deepEqual(omit('a', obj), {b: 2})
+  t.deepEqual(omit('a', obj), {b: 2, c: 3})
+  t.deepEqual(omit(['a', 'b'], obj), {c: 3})
 
   t.end()
 })
