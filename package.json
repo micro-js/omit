@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@f/foreach-obj": "^1.0.1",
-    "@f/has": "^1.0.0",
     "@f/identity": "^1.1.1",
     "@f/index": "^1.0.4",
     "@f/is-array": "^1.1.1",
